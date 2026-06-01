@@ -1,0 +1,62 @@
+{
+  "简述虚拟内存的实现原理，并说明其与Cache的异同": {
+    "ask_count": 2,
+    "last_wrong": null,
+    "score": 5
+  },
+  "请结合计算机组成原理和操作系统，详细分析虚拟内存从硬件支持到软件管理的完整流程。": {
+    "ask_count": 1,
+    "last_wrong": null,
+    "score": 4
+  },
+  "这道题怎么做": {
+    "ask_count": 1,
+    "last_wrong": null,
+    "score": 4
+  },
+  "这道题考的什么知识点，这个知识点在408中通常怎么考": {
+    "ask_count": 1,
+    "last_wrong": null,
+    "score": 4
+  },
+  "指令译码的时候具体做了哪些操作": {
+    "ask_count": 1,
+    "last_wrong": "2026-05-27T19:03:37.103013",
+    "score": 2
+  },
+  "描述出CPU数据通路（单周期和流水线）": {
+    "ask_count": 1,
+    "last_wrong": null,
+    "score": 4
+  },
+  "给定关键字序列 {25, 13, 19, 39, 7, 45, 29}，请逐步画出构造二叉排序树和平衡二叉树的过程。当在其中查找关键字19时，比较两者的平均查找长度。如果随后插入14、16，平衡二叉树会如何调整？请用文字和简单的图结构描述调整步骤。\n": {
+    "ask_count": 1,
+    "last_wrong": "2026-05-31T17:33:41.645392",
+    "score": 2
+  },
+  "Cache映射": {
+    "ask_count": 4,
+    "last_wrong": "2026-06-01T01:23:40.563527",
+    "score": 1
+  },
+  "死锁": {
+    "ask_count": 1,
+    "last_wrong": "2026-06-01T00:50:28.021271",
+    "score": 2
+  },
+  "TCP拥塞控制": {
+    "ask_count": 3,
+    "last_wrong": null,
+    "score": 5
+  },
+  "虚拟存储": {
+    "ask_count": 1,
+    "last_wrong": null,
+    "score": 4
+  },
+  "图": {
+    "ask_count": 1,
+    "last_wrong": "2026-06-01T13:53:25.935419",
+    "score": 2
+  }
+}

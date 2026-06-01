@@ -1,0 +1,256 @@
+/* ── 强化学习页面 ── */
+
+.reinforce-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px 20px;
+}
+
+.reinforce-page h2 {
+  margin-bottom: 16px;
+  color: var(--text-h, #333);
+}
+
+/* ── 选项卡 ── */
+.reinforce-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.reinforce-tab {
+  flex: 1;
+  min-width: 140px;
+  padding: 14px 16px;
+  border: 1px solid var(--border, #eee);
+  border-radius: 10px;
+  background: var(--bg, #fff);
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.reinforce-tab:hover {
+  border-color: var(--accent-border, rgba(100, 108, 255, 0.3));
+  background: var(--card-bg, #f9f9f9);
+}
+
+.reinforce-tab.active {
+  border-color: var(--accent, #646cff);
+  background: var(--accent-bg, rgba(100, 108, 255, 0.05));
+}
+
+.reinforce-tab-label {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-h, #333);
+}
+
+.reinforce-tab-desc {
+  font-size: 12px;
+  color: var(--text-muted, #888);
+}
+
+.reinforce-tab.active .reinforce-tab-label {
+  color: var(--accent, #646cff);
+}
+
+.reinforce-panel {
+  min-height: 300px;
+}
+
+/* ── 题库浏览 ── */
+.bank-filter-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  align-items: center;
+}
+
+.bank-filter-select,
+.bank-filter-input {
+  padding: 8px 12px;
+  border: 1px solid var(--border, #ddd);
+  border-radius: 8px;
+  font-size: 14px;
+  background: var(--bg, #fff);
+  color: var(--text, #333);
+}
+
+.bank-filter-select {
+  min-width: 120px;
+  cursor: pointer;
+}
+
+.bank-filter-input {
+  flex: 1;
+  min-width: 160px;
+}
+
+.bank-filter-btn {
+  padding: 8px 16px;
+  background: var(--accent, #646cff);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.bank-filter-btn:hover:not(:disabled) {
+  background: var(--accent-hover, #535bf2);
+}
+
+.bank-filter-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.bank-error {
+  padding: 10px 16px;
+  background: #fef2f2;
+  color: #dc2626;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #fecaca;
+}
+
+.bank-loading,
+.bank-empty {
+  text-align: center;
+  padding: 40px;
+  color: var(--text-muted, #888);
+}
+
+.bank-count {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-muted, #666);
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  background: var(--card-bg, #f9f9f9);
+  border-radius: 8px;
+}
+
+.bank-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bank-card {
+  padding: 14px 16px;
+  border: 1px solid var(--border, #eee);
+  border-radius: 10px;
+  background: var(--bg, #fff);
+  transition: border-color 0.2s;
+}
+
+.bank-card:hover {
+  border-color: var(--accent-border, rgba(100, 108, 255, 0.3));
+}
+
+.bank-card-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.bank-subject-tag {
+  font-size: 11px;
+  background: #e3f2fd;
+  color: #1565c0;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.bank-source-tag {
+  font-size: 11px;
+  color: var(--text-muted, #aaa);
+  font-style: italic;
+}
+
+.bank-card-actions {
+  margin-left: auto;
+  display: flex;
+  gap: 4px;
+}
+
+.bank-action-btn {
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--border, #eee);
+  border-radius: 6px;
+  background: var(--bg, #fff);
+  cursor: pointer;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  opacity: 0.5;
+}
+
+.bank-action-btn:hover {
+  opacity: 1;
+  border-color: var(--accent, #646cff);
+  background: var(--accent-bg, rgba(100, 108, 255, 0.05));
+}
+
+.bank-question {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text, #333);
+  white-space: pre-wrap;
+}
+
+.bank-answer-details {
+  margin-top: 8px;
+}
+
+.bank-answer-details summary {
+  cursor: pointer;
+  padding: 6px 10px;
+  color: var(--accent, #646cff);
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px solid var(--border, #eee);
+  border-radius: 6px;
+  display: inline-block;
+  transition: background 0.2s;
+}
+
+.bank-answer-details summary:hover {
+  background: var(--accent-bg, rgba(100, 108, 255, 0.05));
+}
+
+.bank-answer {
+  padding: 12px;
+  margin-top: 4px;
+  border: 1px solid var(--border, #eee);
+  border-radius: 8px;
+  background: var(--accent-bg, rgba(100, 108, 255, 0.03));
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text, #333);
+}
+
+/* ── 暗色模式 ── */
+@media (prefers-color-scheme: dark) {
+  .reinforce-tab { background: var(--bg, #1e1e2e); }
+  .reinforce-tab.active { background: rgba(192, 132, 252, 0.08); }
+  .bank-card { background: var(--bg, #1e1e2e); }
+  .bank-subject-tag { background: #1a2a3a; color: #64b5f6; }
+  .bank-error { background: #2a1a1a; border-color: #5c1a1a; color: #f87171; }
+  .bank-answer { background: rgba(192, 132, 252, 0.06); }
+}

@@ -1,0 +1,27 @@
+# ── LLM & Embedding ──
+langchain>=0.3.0
+langchain-community>=0.3.0
+langchain-openai>=0.2.0
+langchain-text-splitters>=0.3.0
+chromadb>=0.5.0
+
+# ── Embedding / Reranking ──
+sentence-transformers>=3.0.0
+
+# ── BM25 关键词检索 ──
+rank-bm25>=0.2.2
+
+# ── 中文分词（BM25 依赖）──
+jieba>=0.42.1
+
+# ── 视觉模型（千问 / DeepSeek API 调用）──
+openai>=1.0.0
+
+# ── 其他 ──
+python-dotenv>=1.0.0
+pypdf>=4.0.0
+
+# ── FastAPI 后端 ──
+fastapi>=0.115.0
+uvicorn>=0.30.0
+python-multipart>=0.0.12

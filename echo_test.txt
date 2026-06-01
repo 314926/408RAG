@@ -1,0 +1,4 @@
+Python check
+bash: which: command not found
+bash: python: command not found
+bash: type: python: not found

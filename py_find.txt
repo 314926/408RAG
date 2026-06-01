@@ -1,0 +1,24 @@
+bash: ls: command not found
+bash: ls: command not found
+bash: ls: command not found
+bash: ls: command not found
+SHELL=/usr/bin/bash
+PATH=d:\Cursor\cursor\resources\app\bin;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\System32;D:\nodejs\;D:\Drivers\PyCharm\PyCharm Community Edition 2023.1\bin\pycharm64.exe;D:\code;C:\Program Files\dotnet\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Java\jdk-22\bin;C:\Program Files\Java\jdk-22\jre\bin;D:\edge dowlands\ffmpeg-2024-08-04-git-eb3cc508d8-essentials_build\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;D:\Vivo\pcsuite\;D:\互传\EasyShare\x86\;D:\互传\EasyShare\x64\;D:\edge dowlands\x86_64-14.2.0-release-win32-seh-msvcrt-rt_v12-rev0\mingw64\bin;C:\WINDOWS\system32\downlevel;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;\bin;D:\edge dowlands\apache-maven-3.9.9-bin\apache-maven-3.9.9\bin;C:\Users\Stephen Curry\scoop\apps\texlive\current\bin\win64;C:\Users\Stephen Curry\scoop\apps\texlive\current\bin\win32;D:\nodejs\node_modules\npm\node_modules;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\OCR;d:\Cursor\cursor\resources\app\codeBin;C:\Users\Stephen Curry\scoop\apps\texlive\current\bin\win64;C:\Users\Stephen Curry\scoop\apps\texlive\current\bin\win32;C:\Users\Stephen Curry\scoop\shims;D:\python\Scripts\;D:\python\;C:\Users\Stephen Curry\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Tencent\QQGameTempest\Hall.57915\;D:\pycharm\PyCharm Community Edition 2023.1\bin;C:\mingw64\bin;C:\Users\Stephen Curry\AppData\Local\Programs\Microsoft VS Code\bin;C:\texlive\2023\bin\windows;C:\Users\Stephen Curry\.dotnet\tools;D:\IDEA\IntelliJ IDEA 2024.1.4\bin;C:\Users\Stephen Curry\AppData\Local\Pandoc\;D:\WebStorm\WebStorm 2024.1.5\bin;C:\Users\Stephen Curry\AppData\Local\JetBrains\Toolbox\scripts;D:\Pycharm\PyCharm 2024.2.4\bin;;C:\Users\Stephen Curry\AppData\Local\Microsoft\WindowsApps;D:\Cursor\cursor\resources\app\bin;D:\nodejs\node_global;D:\bita\;D:\Qoder\Qoder\bin
+/d/408RAG
+HOME=/c/Users/Stephen Curry
+Python 3.11.3
+jieba OK
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'rank_bm25'
+sentence-transformers OK
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Collecting rank-bm25
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/2a/21/f691fb2613100a62b3fa91e9988c991e9ca5b89ea31c0d3152a3210344f9/rank_bm25-0.2.2-py3-none-any.whl (8.6 kB)
+Requirement already satisfied: numpy in d:\python\lib\site-packages (from rank-bm25) (1.26.4)
+Installing collected packages: rank-bm25
+Successfully installed rank-bm25-0.2.2
+
+[notice] A new release of pip is available: 24.0 -> 26.1.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+OK

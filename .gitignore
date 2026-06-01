@@ -1,0 +1,13 @@
+# Git ignore file
+# 忽略数据文件夹
+data/
+models/
+# 忽略 Python 缓存
+__pycache__/
+*.pyc
+# 忽略依赖目录
+node_modules/
+venv/
+
+# 忽略整个 chroma_db 数据库文件夹
+data_output/chroma_db/

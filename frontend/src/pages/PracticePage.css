@@ -1,0 +1,283 @@
+.practice-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 20px;
+}
+
+.practice-container h2 {
+  margin-bottom: 20px;
+  color: var(--text-h, #333);
+}
+
+/* ── 控制区 ── */
+.practice-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+  padding: 16px 20px;
+  background: var(--card-bg, #f9f9f9);
+  border-radius: 12px;
+  border: 1px solid var(--border, #eee);
+}
+
+.control-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: flex-end;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.control-group label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-muted, #666);
+}
+
+.control-group select {
+  padding: 8px 12px;
+  border: 1px solid var(--border, #ddd);
+  border-radius: 8px;
+  font-size: 14px;
+  background: var(--bg, #fff);
+  color: var(--text, #333);
+  min-width: 180px;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.control-group select:focus {
+  border-color: var(--accent, #646cff);
+  outline: none;
+  box-shadow: 0 0 0 2px var(--accent-bg, rgba(100, 108, 255, 0.1));
+}
+
+/* ── 按钮 ── */
+.practice-btn {
+  padding: 10px 20px;
+  background: var(--accent, #646cff);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, opacity 0.2s;
+  white-space: nowrap;
+}
+
+.practice-btn:hover:not(:disabled) {
+  background: var(--accent-hover, #535bf2);
+}
+
+.practice-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.practice-btn.secondary {
+  background: var(--secondary-bg, #e8e8ee);
+  color: var(--text, #333);
+}
+
+.practice-btn.secondary:hover:not(:disabled) {
+  background: var(--secondary-hover, #ddd);
+}
+
+/* ── 题目卡片 ── */
+.problem-card {
+  padding: 28px;
+  border: 1px solid var(--border, #eee);
+  border-radius: 12px;
+  background: var(--bg, #fff);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.problem-header {
+  margin-bottom: 16px;
+}
+
+.problem-type {
+  font-size: 13px;
+  color: var(--text-muted, #888);
+  background: var(--tag-bg, #f0f0f0);
+  padding: 4px 12px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.problem-question {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.problem-question p {
+  margin: 0 0 8px;
+}
+
+.problem-question h1,
+.problem-question h2,
+.problem-question h3,
+.problem-question h4 {
+  margin: 16px 0 8px;
+  color: var(--text-h, #222);
+}
+.problem-question h1 { font-size: 20px; }
+.problem-question h2 { font-size: 18px; }
+.problem-question h3 { font-size: 16px; }
+
+.problem-solution {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border, #eee);
+}
+
+.problem-solution h4 {
+  margin-bottom: 12px;
+  color: var(--text-h, #333);
+  font-size: 16px;
+}
+
+.problem-solution p {
+  margin: 0 0 8px;
+  line-height: 1.6;
+}
+
+.problem-answer {
+  margin-top: 16px;
+  padding: 12px 16px;
+  background: var(--accent-bg, rgba(100, 108, 255, 0.05));
+  border-radius: 8px;
+  border-left: 4px solid var(--accent, #646cff);
+}
+
+.problem-answer p {
+  margin: 4px 0;
+}
+
+/* ── Markdown 代码块 ── */
+.problem-question code,
+.problem-solution code {
+  background: var(--code-bg, #f0f0f0);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-family: 'Consolas', 'Monaco', monospace;
+}
+
+.problem-question pre,
+.problem-solution pre {
+  background: #1e1e2e;
+  color: #cdd6f4;
+  padding: 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 12px 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.problem-question pre code,
+.problem-solution pre code {
+  background: transparent;
+  padding: 0;
+  font-size: 13px;
+}
+
+/* ── Markdown 表格 ── */
+.problem-question table,
+.problem-solution table {
+  border-collapse: collapse;
+  margin: 12px 0;
+  font-size: 14px;
+  width: 100%;
+}
+
+.problem-question th,
+.problem-question td,
+.problem-solution th,
+.problem-solution td {
+  border: 1px solid var(--border, #ddd);
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.problem-question th,
+.problem-solution th {
+  background: var(--table-header-bg, #f0f0f0);
+  font-weight: 600;
+}
+
+.problem-question ul,
+.problem-solution ul,
+.problem-question ol,
+.problem-solution ol {
+  padding-left: 20px;
+  margin: 8px 0;
+}
+
+.problem-question li,
+.problem-solution li {
+  margin-bottom: 4px;
+}
+
+/* ── 错题/薄弱点按钮 ── */
+.practice-mistake-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border, #eee);
+}
+
+.practice-mistake-btn {
+  padding: 8px 16px;
+  font-size: 13px;
+  background: transparent;
+  border: 1px solid var(--border, #ddd);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.practice-mistake-btn.mistake {
+  color: #c62828;
+  border-color: #ef9a9a;
+}
+
+.practice-mistake-btn.mistake:hover {
+  background: #fce4ec;
+}
+
+.practice-mistake-btn.weak {
+  color: #e65100;
+  border-color: #ffcc80;
+}
+
+.practice-mistake-btn.weak:hover {
+  background: #fff3e0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .practice-mistake-btn.mistake { color: #ef9a9a; border-color: #5c3a3a; }
+  .practice-mistake-btn.mistake:hover { background: #3a1a1a; }
+  .practice-mistake-btn.weak { color: #ffb74d; border-color: #5c4a2a; }
+  .practice-mistake-btn.weak:hover { background: #3a2a1a; }
+}
+
+/* ── 暗色模式 ── */
+@media (prefers-color-scheme: dark) {
+  .practice-controls { background: var(--card-bg, #2a2a3e); }
+  .problem-card { background: var(--bg, #1e1e2e); }
+  .problem-solution pre { background: #11111b; }
+  .practice-btn.secondary { background: #3a3a4e; color: #ccc; }
+  .practice-btn.secondary:hover:not(:disabled) { background: #4a4a5e; }
+}

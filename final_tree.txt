@@ -1,0 +1,12 @@
+D:\408RAG\analysis.py
+D:\408RAG\config.py
+D:\408RAG\ingest.py
+D:\408RAG\main.py
+D:\408RAG\qa.py
+D:\408RAG\quick_check.py
+D:\408RAG\.env
+D:\408RAG\.env.example
+D:\408RAG\data_output\report_2026.md
+D:\408RAG\docs\PROGRESS.md
+D:\408RAG\docs\README.md
+D:\408RAG\models\AI-ModelScope\bge-small-zh-v1___5\README.md

@@ -1,0 +1,24 @@
+Total chunks: 2038
+
+--- Chunk 0 ---
+  doc_id: cad49fcfb545
+  chunk_index: 0
+  source: exams\2009年计算机408统考真题.pdf
+--- Chunk 1 ---
+  doc_id: cad49fcfb545
+  chunk_index: 1
+  source: exams\2009年计算机408统考真题.pdf
+--- Chunk 2 ---
+  doc_id: cad49fcfb545
+  chunk_index: 2
+  source: exams\2009年计算机408统考真题.pdf
+--- Chunk 3 ---
+  doc_id: cad49fcfb545
+  chunk_index: 3
+  source: exams\2009年计算机408统考真题.pdf
+--- Chunk 4 ---
+  doc_id: cad49fcfb545
+  chunk_index: 4
+  source: exams\2009年计算机408统考真题.pdf
+
+DONE

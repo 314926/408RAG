@@ -1,0 +1,165 @@
+/* ── 题目详情弹窗 ── */
+
+.item-detail-modal {
+  max-width: 750px;
+  max-height: 85vh;
+}
+
+/* ── 元信息行 ── */
+.detail-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.detail-type-badge {
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.detail-type-badge.weak {
+  background: #fff3e0;
+  color: #e65100;
+}
+
+.detail-type-badge.mistake {
+  background: #fce4ec;
+  color: #c62828;
+}
+
+.detail-subject {
+  font-size: 12px;
+  background: var(--tag-bg, #f0f0f0);
+  color: var(--text-muted, #666);
+  padding: 3px 10px;
+  border-radius: 6px;
+}
+
+.detail-date {
+  font-size: 12px;
+  color: var(--text-muted, #aaa);
+}
+
+.detail-topic,
+.detail-source {
+  font-size: 13px;
+  color: var(--text-muted, #666);
+  margin-bottom: 6px;
+}
+
+/* ── 内容区块 ── */
+.detail-section {
+  margin: 16px 0;
+}
+
+.detail-section h4 {
+  font-size: 15px;
+  color: var(--text-h, #333);
+  margin-bottom: 8px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--border, #eee);
+}
+
+.detail-content {
+  font-size: 15px;
+  line-height: 1.7;
+  padding: 8px 12px;
+  background: var(--card-bg, #f9f9f9);
+  border-radius: 8px;
+  border-left: 3px solid var(--accent, #646cff);
+}
+
+.detail-content p {
+  margin: 0 0 8px;
+}
+
+.detail-content p:last-child {
+  margin-bottom: 0;
+}
+
+.detail-answer {
+  border-left-color: #43a047;
+  background: #f1f8e9;
+}
+
+.detail-user-answer {
+  border-left-color: #ff9800;
+  background: #fff8e1;
+}
+
+/* ── 代码块 ── */
+.detail-content code {
+  background: var(--code-bg, #f0f0f0);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-family: 'Consolas', 'Monaco', monospace;
+}
+
+.detail-content pre {
+  background: #1e1e2e;
+  color: #cdd6f4;
+  padding: 12px;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin: 8px 0;
+  font-size: 13px;
+}
+
+.detail-content pre code {
+  background: transparent;
+  padding: 0;
+}
+
+/* ── 底部操作按钮 ── */
+.detail-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.detail-action-btn {
+  padding: 9px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.detail-action-btn.similar {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+.detail-action-btn.similar:hover {
+  background: #bbdefb;
+}
+
+.detail-action-btn.cards {
+  background: #f3e5f5;
+  color: #7b1fa2;
+}
+
+.detail-action-btn.cards:hover {
+  background: #e1bee7;
+}
+
+/* ── 暗色模式 ── */
+@media (prefers-color-scheme: dark) {
+  .detail-type-badge.weak { background: #3a2a1a; color: #ffb74d; }
+  .detail-type-badge.mistake { background: #3a1a1a; color: #ef9a9a; }
+  .detail-content { background: var(--card-bg, #2a2a3e); }
+  .detail-answer { background: #1a3a2a; border-left-color: #66bb6a; }
+  .detail-user-answer { background: #3a2a1a; border-left-color: #ffa726; }
+  .detail-action-btn.similar { background: #1a2a3a; color: #64b5f6; }
+  .detail-action-btn.similar:hover { background: #2a3a4a; }
+  .detail-action-btn.cards { background: #2a1a3a; color: #ce93d8; }
+  .detail-action-btn.cards:hover { background: #3a2a4a; }
+  .detail-content pre { background: #11111b; }
+}
